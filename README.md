@@ -1,6 +1,8 @@
 Connecting to my Battle for Wesnoth Server
 ==========================================
 
+![Wesnoth Logo](wesnoth.png)
+
 Running Battle for Wesnoth over I2P is possible using "Standard" streaming
 tunnels.
 
