@@ -14,7 +14,7 @@ tunnels.
  - ![Tunnel Name and Description](tunnel-wizard-3.png)
 4. Enter: `ceqcdeghiqxntcq2o4mp7akbq36vg3vwy7dgltbujx46deckjwsa.b32.i2p` as the destination:
  - ![Tunnel Destination](tunnel-wizard-4.png)
-5. Pick a local host and port. I used `localhost:15000` because it is Wesnoth's standard server port:
+5. Pick a local host and port. I used `localhost:15000` because it is Wesnoth's standard server port, so you won't need to mess with your Battle for Wesnoth client:
  - ![Local Host and Port](tunnel-wizard-5.png)
 6. Decide whether you want the tunnel to start automatically:
  - ![Decide whether to autostart](tunnel-wizard-6.png)
