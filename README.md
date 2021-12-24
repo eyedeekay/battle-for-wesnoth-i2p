@@ -6,19 +6,20 @@ Connecting to my Battle for Wesnoth Server
 Running Battle for Wesnoth over I2P is possible using "Standard" streaming
 tunnels.
 
-- First, set up a client tunnel: ![Client Tunnel](tunnel-wizard-1.png)
-
-- Pick a "Standard" tunnel for your tunnel type: ![Tunnel Type](tunnel-wizard-2.png)
-
-- Set a tunnel name and description: ![Tunnel Name and Description](tunnel-wizard-3.png)
-
-- Enter: `ceqcdeghiqxntcq2o4mp7akbq36vg3vwy7dgltbujx46deckjwsa.b32.i2p` as the destination: ![Tunnel Destination](tunnel-wizard-4.png)
-
-- Pick a local host and port. I used `localhost:15000` because it is Wesnoth's standard server port: ![Local Host and Port](tunnel-wizard-5.png)
-
-- Decide whether you want the tunnel to start automatically: ![Decide whether to autostart](tunnel-wizard-6.png)
-
-- Make sure the settings look ok, and save the new tunnel: ![Review settings and finish](tunnel-wizard-7.png)
+1. First, set up a client tunnel: 
+ - ![Client Tunnel](tunnel-wizard-1.png)
+2. Pick a "Standard" tunnel for your tunnel type:
+ - ![Tunnel Type](tunnel-wizard-2.png)
+3. Set a tunnel name and description:
+ -![Tunnel Name and Description](tunnel-wizard-3.png)
+4. Enter: `ceqcdeghiqxntcq2o4mp7akbq36vg3vwy7dgltbujx46deckjwsa.b32.i2p` as the destination:
+ -![Tunnel Destination](tunnel-wizard-4.png)
+5. Pick a local host and port. I used `localhost:15000` because it is Wesnoth's standard server port:
+ -![Local Host and Port](tunnel-wizard-5.png)
+6. Decide whether you want the tunnel to start automatically:
+ -![Decide whether to autostart](tunnel-wizard-6.png)
+7. Make sure the settings look ok, and save the new tunnel:
+ -![Review settings and finish](tunnel-wizard-7.png)
 
 It may improve performance to reduce the length of your tunnel. Since playing
 Battle for Wesnoth is a mostly low-risk activity, I recommend visiting the
