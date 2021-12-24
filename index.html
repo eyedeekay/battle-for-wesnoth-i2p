@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NextCloud over I2P using Docker</title>
+  <link rel="stylesheet" type="text/css" href ="home.css" />
+</head>
+<body>
+<h1 id="connecting-to-my-battle-for-wesnoth-server">Connecting to my Battle for Wesnoth Server</h1>
+<p>Running Battle for Wesnoth over I2P is possible using “Standard” streaming tunnels.</p>
+<ul>
+<li><p>First, set up a client tunnel: <img src="tunnel-wizard-1.png" alt="Client Tunnel" /></p></li>
+<li><p>Pick a “Standard” tunnel for your tunnel type: <img src="tunnel-wizard-2.png" alt="Tunnel Type" /></p></li>
+<li><p>Set a tunnel name and description: <img src="tunnel-wizard-3.png" alt="Tunnel Name and Description" /></p></li>
+<li><p>Enter: <code>ceqcdeghiqxntcq2o4mp7akbq36vg3vwy7dgltbujx46deckjwsa.b32.i2p</code> as the destination: <img src="tunnel-wizard-4.png" alt="Tunnel Destination" /></p></li>
+<li><p>Pick a local host and port. I used <code>localhost:15000</code> because it is Wesnoth’s standard server port: <img src="tunnel-wizard-5.png" alt="Local Host and Port" /></p></li>
+<li><p>Decide whether you want the tunnel to start automatically: <img src="tunnel-wizard-6.png" alt="Decide whether to autostart" /></p></li>
+<li><p>Make sure the settings look ok, and save the new tunnel: <img src="tunnel-wizard-7.png" alt="Review settings and finish" /></p></li>
+</ul>
+<p>It may improve performance to reduce the length of your tunnel. Since playing Battle for Wesnoth is a mostly low-risk activity, I recommend visiting the <code>wesnoth.idk.i2p</code> tunnel on the <a href="http://127.0.0.1:7657/i2ptunnelmgr">I2P Tunnel Manager Page, http://127.0.0.1:7657/i2ptunnelmgr</a> and changint the settings to use short, 1-hop tunnels. These are the tunnel settings I use.</p>
+<ul>
+<li>Fine-tune your settings. : <img src="tunnel-tune-1.png" alt="Fine-tune tunnel settings" /></li>
+</ul>
+<p>If you would rather set up your tunnel by dropping in a configuration file, you can use this one: <a href="i2ptunnel-wesnoth.conf">i2ptunnel-westnoth.conf</a> or copy-paste the section below.</p>
+<pre class="properties"><code>interface=127.0.0.1
+listenPort=15000
+name=wesnoth.idk.i2p
+option.i2cp.closeIdleTime=1800000
+option.i2cp.closeOnIdle=false
+option.i2cp.delayOpen=false
+option.i2cp.destination.sigType=7
+option.i2cp.leaseSetEncType=4,0
+option.i2cp.newDestOnResume=false
+option.i2cp.reduceIdleTime=1200000
+option.i2cp.reduceOnIdle=true
+option.i2cp.reduceQuantity=1
+option.i2p.streaming.connectDelay=0
+option.inbound.backupQuantity=2
+option.inbound.length=1
+option.inbound.lengthVariance=0
+option.inbound.nickname=wesnoth.idk.i2p
+option.inbound.quantity=3
+option.outbound.backupQuantity=2
+option.outbound.length=1
+option.outbound.lengthVariance=0
+option.outbound.nickname=wesnoth.idk.i2p
+option.outbound.quantity=3
+option.persistentClientKey=true
+option.useSSL=false
+privKeyFile=i2ptunnel-wesnoth-privKeys.dat
+sharedClient=false
+startOnLoad=true
+targetDestination=ceqcdeghiqxntcq2o4mp7akbq36vg3vwy7dgltbujx46deckjwsa.b32.i2p
+type=client</code></pre>
+</body>
+</html>
