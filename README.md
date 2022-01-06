@@ -30,7 +30,7 @@ settings I use.
 - Fine-tune your settings. : ![Fine-tune tunnel settings](tunnel-tune-1.png)
 
 If you would rather set up your tunnel by dropping in a configuration file,
-you can use this one: [i2ptunnel-westnoth.conf](i2ptunnel-wesnoth.conf) or
+you can use this one: [i2ptunnel-westnoth.conf](i2ptunnel-wesnoth.config) or
 copy-paste the section below.
 
 ```properties
